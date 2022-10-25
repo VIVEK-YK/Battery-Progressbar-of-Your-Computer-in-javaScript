@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    place-content: center;
+}
+.main{
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: grid;
+    place-content: center;
+    display: inline-flex;
+    position: relative;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 8px;
+    border: 2px solid black;
+    right: -12px;
+    top: 16px;
+}
+.bar{
+    height: 45px;
+    width: 8%;
+    border: 1px solid gray;
+    margin: auto;
+    /* background: blue;
+    display: none; */
+}
